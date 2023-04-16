@@ -1,0 +1,11 @@
+export const AUTH = 'AUTH';
+export const LOGOUT = 'LOGOUT';
+export const PUBLIC = 'PUBLIC';
+export const PRIVATE = 'PRIVATE';
+export const RSO = 'RSO'
+export const UNI = 'UNI'
+export const APPROVED = 'APPROVED'
+export const UNAPPROVED = 'UNAPPROVED'
+export const JOINED = 'JOINED'
+export const STUDENTS = 'STUDENTS'
+export const RATING = 'RATING'

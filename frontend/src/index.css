@@ -1,0 +1,183 @@
+  /* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  margin: 0.5em 0;
+}
+
+h1 {
+  font-size: 2.5em;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 2em;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 1.75em;
+  line-height: 1.2;
+}
+
+h4 {
+  font-size: 1.5em;
+  line-height: 1.2;
+}
+
+h5 {
+  font-size: 1.25em;
+  line-height: 1.2;
+}
+
+h6 {
+  font-size: 1em;
+  line-height: 1.2;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Input */
+input, textarea {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.5em;
+  margin: 0.5em 0;
+  width: 100%;
+}
+
+/* Label */
+label {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  margin: 0.5em 0;
+}
+
+/* Div */
+div {
+  margin: 0.5em 0;
+}
+
+/* Select */
+select {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.5em;
+  margin: 0.5em 0;
+  width: 100%;
+}
+
+/* Option */
+option {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 0.5em;
+}
+
+/* Paragraph */
+p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0.5em 0;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 767px) {
+  /* Headings */
+  h1 {
+    font-size: 2em;
+    line-height: 1.2;
+  }
+  h2 {
+    font-size: 1.75em;
+    line-height: 1.2;
+  }
+  h3 {
+    font-size: 1.5em;
+    line-height: 1.2;
+  }
+  h4 {
+    font-size: 1.25em;
+    line-height: 1.2;
+  }
+  h5 {
+    font-size: 1em;
+    line-height: 1.2;
+  }
+  h6 {
+    font-size: 0.75em;
+    line-height: 1.2;
+  }
+
+  /* Form */
+  form {
+    max-width: 100%;
+  }
+
+  /* Input */
+  input, textarea {
+    width: 100%;
+    padding: 0.5em;
+  }
+
+  /* Select */
+  select {
+    width: 100%;
+    padding: 0.5em;
+  }
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: lightblue;
+}
+
+section {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  margin: 10px;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  background-color: #007bff;
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  right: 0;
+}
+
+
+.logo-wrapper {
+  max-height: 100%;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.logo {
+  max-width: 100%;
+  max-height: 50px;
+}
