@@ -9,6 +9,10 @@ function CreateEvent({rsoID, universityID}) {
   const privateEvents = useSelector((state) => state.event.private)
   const navigate = useNavigate();
   const dispatch = useDispatch();
+  const [location, setLocation] = useState({
+    lat: 28.6024274,
+    lng: 	-81.2000599
+  })
   const [formData, setFormData] = useState({
     Name: "",
     category: "",
@@ -16,8 +20,8 @@ function CreateEvent({rsoID, universityID}) {
     time: "",
     date: "",
     locationName: "",
-    latitude: 10,
-    longitude: 106,
+    latitude: 0,
+    longitude: 0,
     contactPhone: "",
     contactEmail: "",
     isPublic: false,
@@ -27,6 +31,12 @@ function CreateEvent({rsoID, universityID}) {
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
+
+    setFormData({
+      ...formData,
+      latitude: location.lat,
+      longitude: location.lng,
+    });
 
     let sameLocationPublic = publicEvents.filter((element) => (element.Latitude == formData.latitude && element.Longitude == formData.longitude && element.Time == formData.time && element.Date == formData.date))
 
@@ -60,10 +70,9 @@ function CreateEvent({rsoID, universityID}) {
   };
 
   const handleLocationChange = (lat, lng) => {
-    setFormData({
-      ...formData,
-      latitude: lat,
-      longitude: lng,
+    setLocation({
+      lat: lat,
+      lng: lng,
     });
   };
 
@@ -162,7 +171,7 @@ function CreateEvent({rsoID, universityID}) {
         </select>
 
         <MapPicker
-        defaultLocation={{lat:formData.latitude, lng: formData.longitude}}
+        defaultLocation={{lat:location.lat, lng: location.lng}}
         zoom={DefaultZoom}
         mapTypeId='roadmap'
         style={{height: '700px'}}
